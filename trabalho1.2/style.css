@@ -1,0 +1,46 @@
+/* 1. Estilo para o <body> */
+body {
+    background-color: #ddd;
+    font-family: "Helvetica Neue", sans-serif;
+    color: #444;
+    line-height: 1.5;
+    
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-top: solid 1px gray;
+}
+
+/* 2. Estilo para o <main> */
+main {
+    background-color: white;
+    padding: 20px;
+}
+
+/* 3. Títulos principais */
+h1, h2 {
+    color: rgb(140, 76, 8);
+}
+
+/* 4. Estilo para as <section> */
+section {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+/* 5. Ajustes opcionais para links e listas (não exigido, mas recomendado) */
+a {
+    color: #444;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
