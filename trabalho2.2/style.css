@@ -1,0 +1,203 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Menu de navegação */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+nav ul li a:active {
+    color: #ffcc00;
+}
+
+/* Estilos para a região principal */
+main {
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+h2 {
+    font-size: 2em;
+    color: #4CAF50;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+/* Estilo para os campos do formulário */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid,
+input[type="number"]:valid,
+input[type="tel"]:valid,
+input[type="date"]:valid {
+    border-color: #4CAF50;
+}
+
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+input[type="password"]:invalid,
+input[type="number"]:invalid,
+input[type="tel"]:invalid,
+input[type="date"]:invalid {
+    border-color: #f44336;
+}
+
+/* Ícones de validação utilizando pseudo-elementos */
+input[type="text"]:valid::after,
+input[type="email"]:valid::after,
+input[type="password"]:valid::after,
+input[type="number"]:valid::after,
+input[type="tel"]:valid::after,
+input[type="date"]:valid::after {
+    content: "✓";
+    color: #4CAF50;
+    font-size: 1.5em;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+input[type="text"]:invalid::after,
+input[type="email"]:invalid::after,
+input[type="password"]:invalid::after,
+input[type="number"]:invalid::after,
+input[type="tel"]:invalid::after,
+input[type="date"]:invalid::after {
+    content: "✖";
+    color: #f44336;
+    font-size: 1.5em;
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+/* Regras de estilo utilizando seletor de ID */
+#contact-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact-info h3 {
+    color: #333;
+    font-size: 1.8em;
+}
+
+/* Regras de estilo utilizando seletor de classe */
+.button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+/* Seletor de descendente */
+main section h2 {
+    color: #4CAF50;
+    font-size: 2.5em;
+}
+
+/* Seletor de irmão adjacente */
+h2 + p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Estilizando links com pseudo-classes */
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #ffcc00;
+}
+
+/* Pseudo-classe :has */
+form:has(input:invalid) {
+    border: 2px solid #f44336;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Pseudo-classe :is */
+form:has(:is(input:invalid, textarea:invalid)) {
+    background-color: #ffcccc;
+}
+
+/* Pseudo-classe :first-child */
+section p:first-child {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+/* Pseudo-classe :first-of-type */
+section p:first-of-type {
+    color: #4CAF50;
+}
+
+/* Torna os inputs relativos para poder*
